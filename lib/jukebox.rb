@@ -32,8 +32,7 @@ def play (songs)
   songs.each_with_index do |song, i|
     if song.include?(song_choice) || song_choice == songs[i]
       puts "Playing #{song}"
-    end
-    if !song.include?(song_choice) && song_choice != songs[i]
+    elsif !song.include?(song_choice) && song_choice != songs[i]
       puts "Invalid message, please try again"
     end
   end
