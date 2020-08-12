@@ -28,14 +28,14 @@ end
 
 def play (songs)
   puts "Please enter a song name or number:"
-  song_choice = gets.strip
+  song_choice = gets.strip.to_s
   songs.each_with_index do |song, i|
-    if song.include?(song_choice) || song_choice.to_i == (i + 1)
+    if song.include?(song_choice) || song_choice == (i + 1).to_s
       puts "Playing #{song}"
     end
   end
   songs.each_with_index do |song, i|
-    if !songs.include?(song_choice) && song_choice.to_i != (i + 1)
+    if !songs.include?(song_choice) && song_choice != (i + 1).to_s
       puts "Invalid input, please try again"
     end
   end
