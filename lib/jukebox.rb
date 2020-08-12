@@ -33,7 +33,7 @@ def play (songs)
     if song.include?(song_choice) || song_choice == songs[i]
       puts "Playing #{song}"
     else
-      nil
+      puts "Invalid input, please try again"
     end
   end
 end
