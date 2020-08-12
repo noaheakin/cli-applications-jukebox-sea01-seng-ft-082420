@@ -35,6 +35,7 @@ def play (songs)
     end
     if !song.include?(song_choice) && song_choice != songs[i]
       puts "Invalid message, please try again"
+    end
   end
 end
 
