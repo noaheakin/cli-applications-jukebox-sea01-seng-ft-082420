@@ -21,13 +21,15 @@ def help
 end
 
 def list (songs)
-  i = 0
-  while songs[i] do
-    puts "#{i+ 1}. " + songs[i]
+  songs.each_with_index do |song, i|
+    puts "#{i+ 1}. #{song}"
     i += 1
   end
 end
 
+def play
+
+  
 def run (songs)
   puts "Please enter a command:"
   user_input = gets.strip
