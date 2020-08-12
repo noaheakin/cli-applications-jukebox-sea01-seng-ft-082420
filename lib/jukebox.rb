@@ -22,11 +22,14 @@ end
 
 def list (songs)
   songs.each_with_index do |song, i|
-    puts "#{i+1}. #{song}"
+    "#{i+1}. #{song}"
   end
 end
 
-def play
+def play (songs)
+  puts "Please enter a song name or number:"
+  song_choice = gets.strip
+  
 end
 
 
@@ -36,6 +39,6 @@ def run (songs)
   if user_input == 'help'
     help
   elsif user_input == 'list'
-    list (songs)
+    puts list (songs)
   end
 end
