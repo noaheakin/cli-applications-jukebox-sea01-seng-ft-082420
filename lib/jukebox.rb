@@ -27,6 +27,7 @@ def list (songs)
 end
 
 def play
+end
 
 
 def run (songs)
