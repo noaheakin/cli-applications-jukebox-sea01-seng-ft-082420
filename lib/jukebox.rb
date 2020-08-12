@@ -22,7 +22,7 @@ def run (songs)
     if user_input == 'help'
       help
     elsif user_input == 'list'
-      puts list (songs)
+      list (songs)
     end
   end
 end
