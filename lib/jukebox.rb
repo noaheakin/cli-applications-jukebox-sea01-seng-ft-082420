@@ -35,8 +35,9 @@ def play (songs)
     end
   end
   songs.each_with_index do |song, i|
-  if !songs.include?(song_choice) && song_choice != songs[i]
-    puts "Invalid input, please try again"
+    if !songs.include?(song_choice) && song_choice != songs[i]
+      puts "Invalid input, please try again"
+    end
   end
 end
 
