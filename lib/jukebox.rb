@@ -31,8 +31,9 @@ def play (songs)
   song_choice = gets.strip
   songs.each do |song|
     if song.include?(song_choice) || song_choice == songs[song]
+      puts "Playing #{song}"
+    end
   end
-
 end
 
 
