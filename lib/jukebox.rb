@@ -19,10 +19,9 @@ end
 def run (songs)
   puts "Please enter a command:"
   user_input = gets.strip
-    if user_input == 'help'
-      help
-    elsif user_input == 'list'
-      list (songs)
-    end
+  if user_input == 'help'
+    help
+  elsif user_input == 'list'
+    list (songs)
   end
 end
